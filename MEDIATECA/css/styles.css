@@ -1,0 +1,300 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body settings */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    flex: auto;
+    font-size: 2.5rem;
+    font-weight: 700;
+    animation: logoAnimation 2s ease-in-out infinite;
+}
+
+@keyframes logoAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+header nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Main sections */
+section {
+    padding: 50px 20px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* About Section */
+#about {
+    background-color: #ecf0f1;
+}
+
+/* Cultural Offer Section */
+#offer {
+    background-color: #3498db;
+    color: white;
+}
+
+.offer-text {
+    color: rgb(255, 255, 255);
+}
+
+#offer ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    margin-top: 30px;
+}
+
+#offer li {
+    background-color: #fff;
+    color: #3498db;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#offer li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+#offer li:active {
+    transform: translateY(0);
+}
+
+/*Media*/
+
+/* Dashboard Section */
+#dashboard a {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.onedrive {
+    margin-left: 180px;
+}
+
+/*Carrusel*/
+.carousel {
+    margin-left: 450px;
+    position: relative;
+    width: 50%; /* Ajusta el tamaño del carrusel */
+    overflow: hidden; /* Oculta las partes de las imágenes fuera del contenedor */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.carousel-images {
+    display: flex; /* Coloca las imágenes en fila */
+    transition: transform 0.5s ease-in-out; /* Suaviza el desplazamiento */
+}
+
+.carousel-images img {
+    width: 100%; /* La imagen ocupa todo el ancho del carrusel */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan más allá de su tamaño natural */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+/*Memoria*/
+
+.portada {
+margin-left: 680px;
+box-shadow: 0 8px 15px #333;
+border-radius: 15px;
+}
+
+.portada:hover {
+    transform: scale(1.05)
+}
+
+.download {
+align-items: center;
+margin-left: 845px;
+display: inline-block;
+padding: 15px 25px;
+color: #011d3c;
+background-color: #3498db;
+text-decoration: none;
+font-size: 1.1rem;
+transition: all 0.3s ease-in-out;
+border-radius: 5px;
+}
+
+.download:hover {
+background-color: #3498db;
+color: white;
+transform: scale(1.05);
+}
+
+/* Contenedor de fotos */
+.photo-container {
+    display: flex; /* Coloca las fotos en una fila */
+    gap: 20px; /* Espacio entre las fotos */
+    margin-left: 645px;
+}
+
+.photo-container:hover {
+    transform: scale(1.05)
+}
+/* Fotos */
+.photo-container img {
+    width: 300px; /* Ancho fijo para las fotos */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    background-color: #ecf0f1;
+    color: #7f8c8d;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
